@@ -1,0 +1,6 @@
+@moist_von_lipwig_HostAddress = http://localhost:5294
+
+GET {{moist_von_lipwig_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
