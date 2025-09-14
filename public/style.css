@@ -1,11 +1,10 @@
-/* Reset some default styles */
 * {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
-/* Body background & centering */
+
 body {
     height: 100vh;
     display: flex;
@@ -14,8 +13,9 @@ body {
     background: linear-gradient(135deg, #a0a4e9, #686877);
     color: #333;
 }
-/* Login container */
-.login-container {
+
+/* Shared container styles */
+.card {
     background-color: #fff;
     padding: 32px 40px;
     border-radius: 12px;
@@ -24,17 +24,16 @@ body {
     max-width: 400px;
 }
 
-/* Form labels */
-.login-container label {
+.card label {
     display: block;
     margin-bottom: 6px;
     font-weight: 600;
     color: #333;
 }
 
-/* Input fields */
-.login-container input[type="text"],
-.login-container input[type="email"] {
+.card input[type="text"],
+.card input[type="email"],
+.card textarea {
     width: 100%;
     padding: 10px 12px;
     margin-bottom: 16px;
@@ -44,14 +43,13 @@ body {
     transition: border 0.3s;
 }
 
-.login-container input[type="text"]:focus,
-.login-container input[type="email"]:focus {
+.card input:focus,
+.card textarea:focus {
     border-color: #6b73ff;
     outline: none;
 }
 
-/* Submit button */
-.login-container button {
+.card button {
     width: 100%;
     padding: 12px;
     background-color: #6b73ff;
@@ -64,9 +62,16 @@ body {
     transition: background-color 0.3s;
 }
 
-.login-container button:hover {
+.card button:hover {
     background-color: #151850;
 }
+
+.card textarea {
+    height: 100px;
+    resize: vertical;
+}
+
+
 
 /* Optional: small responsive adjustment */
 @media (max-width: 480px) {
