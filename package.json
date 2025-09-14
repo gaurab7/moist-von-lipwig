@@ -6,8 +6,8 @@
   "type": "module",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "nodemon index.js",
-    "start": "node index.js"
+    "dev": "nodemon src/server.js",
+    "start": "node src/server.js"
   },
   "repository": {
     "type": "git",
@@ -22,7 +22,12 @@
   "homepage": "https://github.com/gaurab7/moist-von-lipwig#readme",
   "dependencies": {
     "cors": "^2.8.5",
+    "dotenv": "^17.2.2",
     "express": "^5.1.0",
-    "nodemon": "^3.1.10"
+    "node-cron": "^4.2.1",
+    "nodemailer": "^7.0.6",
+    "nodemon": "^3.1.10",
+    "redis": "^5.8.2",
+    "uuid": "^13.0.0"
   }
 }
